@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezuka's Information Adventure Diary-trivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tezuka's Information Adventure Diary</h1>
+    </header>
+
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="trivia.html">trivia</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="left-sidebar">
+            <h2>Links useful for learning</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/ja/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://ja.javascript.info/" target="_blank">JavaScript</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h2>BMI Calculator</h2>
+            <p>Enter your height and weight. Your BMI and the category it falls into will be displayed.</p>
+            <div class="bmi-calculator">
+                <label for="height">height (cm):</label><br>
+                <input type="number" id="height" name="height" min="1" required><br><br>
+                <label for="weight">weight (kg):</label><br>
+                <input type="number" id="weight" name="weight" min="1" required><br><br>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <p id="bmiResult"></p>
+                <p id="bmiCategory"></p>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <h2>Contact us</h2>
+            <form>
+                <label for="name">name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">send</button>
+                <button type="reset">clear</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025/07/21 tezuka. All Rights Reserved.</p>
+        <p>
+            <a href="#" target="_blank">blog</a> |
+            <a href="#" target="_blank">X</a> |
+            <a href="#" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

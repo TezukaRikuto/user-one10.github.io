@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff; /* ヘッダーの背景色 */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.menu-bar {
+    background-color: #333; /* メニューバーの背景色 */
+    padding: 0.8rem 0;
+}
+
+.menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-sidebar {
+    flex: 1;
+    background-color: #e0e0e0; /* 左サイドバーの背景色 */
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.left-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.left-sidebar ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.content {
+    flex: 3;
+    background-color: #ffffff; /* コンテンツの背景色 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.right-sidebar {
+    flex: 1;
+    background-color: #e0e0e0; /* 右サイドバーの背景色 */
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.right-sidebar form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.right-sidebar form input[type="text"],
+.right-sidebar form input[type="email"],
+.right-sidebar form textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.right-sidebar form button {
+    background-color: #28a745; /* 送信ボタンの背景色 */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.right-sidebar form button[type="reset"] {
+    background-color: #dc3545; /* クリアボタンの背景色 */
+}
+
+footer {
+    background-color: #333; /* フッターの背景色 */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Portfolio Page Specific Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Trivia Page Specific Styles */
+.bmi-calculator {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.bmi-calculator input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.bmi-calculator button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bmiResult, #bmiCategory {
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
